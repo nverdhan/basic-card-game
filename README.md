@@ -1,5 +1,8 @@
 Based on the repository by Anika Henke
-Made a few changes to the card css and added animations
+
+https://github.com/selfthinker/CSS-Playing-Cards
+
+Made a few changes to the card css and added animations.
 
 CSS Playing Cards
 =================
