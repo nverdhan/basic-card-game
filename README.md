@@ -1,3 +1,6 @@
+Based on the repository by Anika Henke
+Made a few changes to the card css and added animations
+
 CSS Playing Cards
 =================
 
