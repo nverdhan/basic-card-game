@@ -22,7 +22,7 @@
     <!-- the following js and css is not part of the CSS cards, but only for this example page -->
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.min.js"></script>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.2.27/angular.min.js"></script>
-    <script type="text/javascript"><!--
+    <script type="text/javascript" src="js/app.js"><!--
     $(document).ready(function(){
         $('.options').addClass('active');
         $('.toggle li').click(function(){
@@ -69,5 +69,12 @@
         }
     --></style>
 </head>
-<body>
+<body ng-app="cardapp" ng-controller = "PlayingCardController">
+    <div class="playingCards simpleCards firstperson" ng-controller = "FirstPersonController">
+        <ul class="hand">
+            <li ng-repeat = "card in cardlist">
+                <a class="card" ng-class = "assignClass(card)"><span class="rank">{{card.rank}}</span><span class="suit" ng-bind-html="'&'+card.suit+';' | unsafe"></span></a>
+            </li>
+        </ul>
+    </div>
 </body>
