@@ -36,6 +36,48 @@
 .playingCards a.card {
     text-decoration: none;
 }
+.playingCards a.card:hover, .playingCards a.card:active, .playingCards a.card:focus,
+.playingCards label.card:hover,
+.playingCards strong .card {
+    -webkit-animation: hoveranim 0.1s; /* Chrome, Safari, Opera */
+    animation: hoveranim 0.1s;
+}
+@-webkit-keyframes hoveranim {
+    from {
+    bottom: 0.0em;
+    right: 0.0em;        
+    -moz-box-shadow: 0.05em .05em .2em #333;
+    -webkit-box-shadow: .05em .05em .2em #333;
+    box-shadow: .05em .05em .2em #333;
+    }
+    to {
+    bottom: 0.5em;
+    right: 0.5em;
+    -moz-box-shadow: .2em .2em .5em #333;
+    -webkit-box-shadow: .2em .2em .5em #333;
+    box-shadow: .2em .2em .5em #333;
+
+    }
+}
+
+/* Standard syntax */
+@keyframes hoveranim {
+    from {
+    bottom: 0.0em;
+    right: 0.0em;   
+    -moz-box-shadow: 0.05em .05em .2em #333;
+    -webkit-box-shadow: .05em .05em .2em #333;
+    box-shadow: .05em .05em .2em #333;
+    }
+    to {
+    bottom: 0.5em;
+    right: 0.5em;
+    -moz-box-shadow: .2em .2em .5em #333;
+    -webkit-box-shadow: .2em .2em .5em #333;
+    box-shadow: .2em .2em .5em #333;
+
+    }
+} 
 /* selected and hover state */
 .playingCards a.card:hover, .playingCards a.card:active, .playingCards a.card:focus,
 .playingCards label.card:hover,
@@ -46,6 +88,44 @@
     -webkit-box-shadow: .2em .2em .5em #333;
     box-shadow: .2em .2em .5em #333;
 }
+.playingCards a.card:active, .playingCards a.card:focus, .playingCards a.card.active, .playingCards a.card.active:hover{
+    -webkit-animation: activeanim 0.1s; /* Chrome, Safari, Opera */
+    animation: activeanim 0.1s;
+}
+@-webkit-keyframes activeanim {
+    from {
+    bottom: 0.5em;
+    right: 0.5em;
+    -moz-box-shadow: .2em .2em .5em #333;
+    -webkit-box-shadow: .2em .2em .5em #333;
+    box-shadow: .2em .2em .5em #333;
+    }
+    to {
+    bottom: 2em;
+    right: 0.5em;
+    -moz-box-shadow: .2em .2em .5em #333;
+    -webkit-box-shadow: .2em .2em .5em #333;
+    box-shadow: .2em .2em .5em #333;
+    }
+}
+
+/* Standard syntax */
+@keyframes activeanim {
+    from {
+    bottom: 0.5em;
+    right: 0.5em;
+    -moz-box-shadow: .2em .2em .5em #333;
+    -webkit-box-shadow: .2em .2em .5em #333;
+    box-shadow: .2em .2em .5em #333;
+    }
+    to {
+    bottom: 2em;
+    right: 0.5em;
+    -moz-box-shadow: .2em .2em .5em #333;
+    -webkit-box-shadow: .2em .2em .5em #333;
+    box-shadow: .2em .2em .5em #333;
+    }
+} 
 
 .playingCards a.card:active, .playingCards a.card:focus, .playingCards a.card.active, .playingCards a.card.active:hover{
     bottom: 2em;
