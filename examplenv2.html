@@ -11,6 +11,7 @@
 <html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
 <head>
     <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
     <title>CSS Playing Cards</title>
     <link rel="stylesheet" type="text/css" href="cards.css" media="screen" />
     <!--[if lt IE 9]>
@@ -67,10 +68,17 @@
             font-size: 1px;
             visibility: hidden;
         }
+        var scaleX = canvas.width / window.innerWidth;
+        var scaleY = canvas.height / window.innerHeight;
+        var scaleToFit = Math.min(scaleX, scaleY);
+         
+        stage.style.transformOrigin = "0 0";
+        stage.style.transform = "scale("+scaleToFit+")";
     --></style>
 </head>
-<body ng-app="cardapp" ng-controller = "PlayingCardController">
-    <div class="playingCards simpleCards firstperson" ng-controller = "FirstPersonController">
+<body ng-app="cardapp" ng-controller = "PlayingCardController">    
+    <div ng-style = 'getPlayAreaStyle()'> </div>
+    <div class="playingCards simpleCards firstperson rotateHand" ng-controller = "FirstPersonController" ng-style = 'getFirstPersonStyle()'>
         <ul class="hand">
             <li ng-repeat = "card in cardlist">
                 <a class="card" ng-class = "assignClass(card)"><span class="rank">{{card.rank}}</span><span class="suit" ng-bind-html="'&'+card.suit+';' | unsafe"></span></a>

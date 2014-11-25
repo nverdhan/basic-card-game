@@ -12,8 +12,8 @@
 
 .playingCards .card {
     display: inline-block;
-    width: 3.3em;
-    height: 4.6em;
+    width: 3em;
+    height: 3.6em;
     border: 1px solid #666;
     border-radius: .3em;
     -moz-border-radius: .3em;
@@ -51,8 +51,8 @@
     box-shadow: .05em .05em .2em #333;
     }
     to {
-    bottom: 0.5em;
-    right: 0.5em;
+    bottom: 0.1em;
+    right: 0.1em;
     -moz-box-shadow: .2em .2em .5em #333;
     -webkit-box-shadow: .2em .2em .5em #333;
     box-shadow: .2em .2em .5em #333;
@@ -70,8 +70,8 @@
     box-shadow: .05em .05em .2em #333;
     }
     to {
-    bottom: 0.5em;
-    right: 0.5em;
+    bottom: 0.1em;
+    right: 0.1em;
     -moz-box-shadow: .2em .2em .5em #333;
     -webkit-box-shadow: .2em .2em .5em #333;
     box-shadow: .2em .2em .5em #333;
@@ -82,8 +82,8 @@
 .playingCards a.card:hover, .playingCards a.card:active, .playingCards a.card:focus,
 .playingCards label.card:hover,
 .playingCards strong .card {
-    bottom: 0.5em;
-    right: 0.5em;
+    bottom: 0.1em;
+    right: 0.1em;
     -moz-box-shadow: .2em .2em .5em #333;
     -webkit-box-shadow: .2em .2em .5em #333;
     box-shadow: .2em .2em .5em #333;
@@ -94,15 +94,15 @@
 }
 @-webkit-keyframes activeanim {
     from {
-    bottom: 0.5em;
-    right: 0.5em;
+    bottom: 0.1em;
+    right: 0.1em;
     -moz-box-shadow: .2em .2em .5em #333;
     -webkit-box-shadow: .2em .2em .5em #333;
     box-shadow: .2em .2em .5em #333;
     }
     to {
-    bottom: 2em;
-    right: 0.5em;
+    bottom: 1em;
+    right: 0.2em;
     -moz-box-shadow: .2em .2em .5em #333;
     -webkit-box-shadow: .2em .2em .5em #333;
     box-shadow: .2em .2em .5em #333;
@@ -112,15 +112,15 @@
 /* Standard syntax */
 @keyframes activeanim {
     from {
-    bottom: 0.5em;
-    right: 0.5em;
+    bottom: 0.1em;
+    right: 0.1em;
     -moz-box-shadow: .2em .2em .5em #333;
     -webkit-box-shadow: .2em .2em .5em #333;
     box-shadow: .2em .2em .5em #333;
     }
     to {
-    bottom: 2em;
-    right: 0.5em;
+    bottom: 1em;
+    right: 0.2em;
     -moz-box-shadow: .2em .2em .5em #333;
     -webkit-box-shadow: .2em .2em .5em #333;
     box-shadow: .2em .2em .5em #333;
@@ -128,8 +128,8 @@
 } 
 
 .playingCards a.card:active, .playingCards a.card:focus, .playingCards a.card.active, .playingCards a.card.active:hover{
-    bottom: 2em;
-    right: 0.5em;
+    bottom: 1em;
+    right: 0.2em;
     -moz-box-shadow: .2em .2em .5em #333;
     -webkit-box-shadow: .2em .2em .5em #333;
     box-shadow: .2em .2em .5em #333;
@@ -569,7 +569,7 @@
     list-style-type: none;
     padding: 0;
     margin: 0 0 1.5em 0;
-    position: relative;
+    position: absolute;
     clear: both;
 }
 .playingCards ul.hand {
@@ -596,21 +596,21 @@
     bottom: 0;
 }
 .playingCards ul.hand li:nth-child(1)  { left: 0; }
-.playingCards ul.hand li:nth-child(2)  { left: 1.1em; }
-.playingCards ul.hand li:nth-child(3)  { left: 2.2em; }
-.playingCards ul.hand li:nth-child(4)  { left: 3.3em; }
-.playingCards ul.hand li:nth-child(5)  { left: 4.4em; }
-.playingCards ul.hand li:nth-child(6)  { left: 5.5em; }
-.playingCards ul.hand li:nth-child(7)  { left: 6.6em; }
-.playingCards ul.hand li:nth-child(8)  { left: 7.7em; }
-.playingCards ul.hand li:nth-child(9)  { left: 8.8em; }
-.playingCards ul.hand li:nth-child(10) { left: 9.9em; }
-.playingCards ul.hand li:nth-child(11) { left: 11em; }
-.playingCards ul.hand li:nth-child(12) { left: 12.1em; }
-.playingCards ul.hand li:nth-child(13) { left: 13.2em; }
+.playingCards ul.hand li:nth-child(2)  { left: 1.8em; }
+.playingCards ul.hand li:nth-child(3)  { left: 3.6em; }
+.playingCards ul.hand li:nth-child(4)  { left: 5.4em; }
+.playingCards ul.hand li:nth-child(5)  { left: 7.2em; }
+.playingCards ul.hand li:nth-child(6)  { left: 9em; }
+.playingCards ul.hand li:nth-child(7)  { left: 10.8em; }
+.playingCards ul.hand li:nth-child(8)  { left: 12.6em; }
+.playingCards ul.hand li:nth-child(9)  { left: 14.4em; }
+.playingCards ul.hand li:nth-child(10) { left: 16.2em; }
+.playingCards ul.hand li:nth-child(11) { left: 18em; }
+.playingCards ul.hand li:nth-child(12) { left: 19.8em; }
+.playingCards ul.hand li:nth-child(13) { left: 21.6em; }
 
-.playingCards ul.hand li:nth-child(14) { left: 14.3em; }
-.playingCards ul.hand li:nth-child(15) { left: 15.4em; }
+.playingCards ul.hand li:nth-child(14) { left: 26em; }
+.playingCards ul.hand li:nth-child(15) { left: 28em; }
 .playingCards ul.hand li:nth-child(16) { left: 16.5em; }
 .playingCards ul.hand li:nth-child(17) { left: 17.6em; }
 .playingCards ul.hand li:nth-child(18) { left: 18.7em; }
